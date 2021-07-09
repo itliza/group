@@ -35,7 +35,7 @@ body {
 .section {
 	width: 100%;
 	max-width: 1024px;
-	margin: 0 auto;
+	margin: 59px auto;
 }
 .about {
 	font-size: 28px;
@@ -61,13 +61,12 @@ body {
 	padding: 16px;
 	border-bottom: 1px solid;
 	border-top: 1px solid;
-	margin-top: 59px;
 	margin-bottom: 47px;
 }
 .info {
 	display: flex;
-	/*flex: 1 1 auto;*/
-  	margin: 60px -28px 0 0;
+  	justify-content: space-between;
+  	flex-wrap: wrap;
 }
 .box {
 	display: flex;
@@ -75,12 +74,13 @@ body {
 	color: #fff;
 	font-size: 18px;
 	padding: 50px;
-	width: 100%;
-  	margin: 0 28px 0 0;
+	flex: 0 1 500px;
+  	/*margin: 28px 0 0; нужен, если будет больше боксов*/
   	align-items: center;
 }
 .btn-send {
-	width: 200px;
+	/*width: 200px;*/
+	flex: 0 0 200px;
 	height: 60px;
 	background-color: #000;
 	border-color: #000;
@@ -97,14 +97,15 @@ body {
 	outline: none;
 	resize: none;
 	font-size: 18px; 
-	width: 100%;
-	padding-top: 19px;
+	flex-grow: 1;
+	flex-shrink: 0;
 }
 .contact-form {
 	display: flex;
 	justify-content: space-between;
 	padding: 30px;
 	border: 1px solid;
+	align-items: center;
 }
 .slick-dots {
 	display: flex;
@@ -137,7 +138,7 @@ body {
 
 and (min-width: 0px)
 
-and (max-width: 1023px) {
+and (max-width: 1024px) {
 	.wrapper {
 		padding: 48px;
 	}
@@ -171,7 +172,6 @@ and (max-width: 1023px) {
 		display: block;
 		position: absolute;
 		top: 56px;
-		margin: 0 auto;
 	}
 	.section {
 		max-width: 1023px;
@@ -183,7 +183,7 @@ and (max-width: 1023px) {
 }
 
 	.wrapper.menu-open {
-		padding: 360px 48px 48px;
+		padding: 192px 48px 48px;
 	}
 	.wrapper.menu-open .header .contact-form {
 		display: flex;
@@ -226,11 +226,8 @@ and (max-width: 1023px) {
 		display: block;
 		position: absolute;
 		background: #000;
-		/*top: 7.4px;
-		left: 19.9px;*/
-		top: 0;
-		left: 0;
-		padding: 40.6px 32.1px;
+		top: 41px;
+		left: 32px;
 	}
 }
 
