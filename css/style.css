@@ -234,9 +234,9 @@ and (max-width: 1024px) {
 
 	@media only screen
 
-	and (min-width: 320px)
+	and (min-width: 0px)
 
-	and (max-width: 900px) {
+	and (max-width: 540px) {
 	.wrapper {
 		padding: 0 20px;
 	}
@@ -245,6 +245,9 @@ and (max-width: 1024px) {
 	}
 	.header {
 		padding: 0;
+	}
+	.slider {
+		margin: 0 -20px;
 	}
 /*	.slider {
 		max-width: 1023px;
@@ -258,6 +261,12 @@ and (max-width: 1024px) {
 	.btn-menu {
 		z-index: 1;
 		top: 23px;
+		background: transparent;
+		/*box-shadow: -5px -5px 5px #ccc;*/
+	}
+	.btn-menu svg * {
+		fill: #fff;
+		box-shadow: red;
 	}
 	.slick-dots {
 	margin-top: 24px;
@@ -275,13 +284,21 @@ and (max-width: 1024px) {
 		display: block;
 		position: relative;
 		text-align: center;
+		height: 230px;
+		padding: 20px;
+	}
+	.textarea {
+		text-align: center;
+		padding: 0;
 	}
 	.btn-send {
 		position: absolute;
 		left: 0;
-		top: 90px;
+		top: 230px;
 		width: 100%;
-		margin: 20px 0;	
+		margin: 20px 0;
+		/*outline: 1px solid #fff;*/
+    	/*outline-style: auto;*/
 	}
 
 	.section {
@@ -303,7 +320,32 @@ and (max-width: 1024px) {
 	.bigger {
 		font-size: 24px;
 	}
+	.wrapper.menu-open .header .logo {
+		display: block;
+		position: absolute;
+		top: 24px;
+		right: 0;
+	}
+	.wrapper.menu-open .header .logo svg * {
+		fill: #fff;
 
+	}
+	.wrapper.menu-open .header .btn-close {
+		background: #000;
+		top: 0;
+		left: 0;
+	}
+	.wrapper.menu-open .header .contact-form {
+		margin: 90px 20px 110px 20px;
+	}
+	.wrapper.menu-open .header .nav a {
+		margin: 48px 20px;
+		display: block;
+		text-align: left;
+	}
+	.wrapper.menu-open .header .nav {
+
+	}
 }
 
 
